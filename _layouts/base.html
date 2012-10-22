@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en-GB">
+    <head>
+        <!-- utf-8 is reasonably nice, let's use that for our homepage -->
+        <meta charset="utf-8"/>
+        <title>
+            {% if page.title %}
+                {{ page.title }} -
+            {% endif %}
+            The BioNLPeer Review
+        </title>
+
+        <!-- Our standard style -->
+        <link rel="stylesheet" type="text/css" href="/style.css"/>
+
+        <!-- Google Analytics -->
+        <script type="text/javascript" src="src/google_analytics.js"></script>
+        <!-- Verification for the Google Webmaster Tools -->
+        <meta name="google-site-verification"
+            content="LaAY7yI3nqCj63FGTxvLtyRE5q8YKJ8HWrrAJ097oN0"/>
+
+        <!-- Most browsers won't need this but still, here -->
+        <link rel="shortcut icon" href="favicon.ico"/>
+    </head>
+    <body>
+        <div id="main">
+            <header id="banner" role="banner">
+                <h1><a href="#">The BioNLPeer Review</a></h1>
+                <h2>Where every article has undergone BioNLPeer-review...</h2>
+                <nav role="navigation">
+                    <ul>
+                        <li><a href="#" class="active">Home</a></li>
+                        <li><a href="#">Page 1</a></li>
+                        <li><a href="#">Page 2</a></li>
+                        <li><a href="#">Page 3</a></li>
+                        <li><a href="#">Page 4</a></li>
+                        <li><a href="#">About</a></li>
+                    </ul>
+                </nav>
+            </header>
+
+            <div id="main-content">
+                {{ content }}
+                <div id="sidebar">
+                    <h2>Something</h2>
+                    <img src="eol-rattus-norvegicus.png" width="50%"/>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+                </div>
+            </div>
+          </div>
+        </div>
+    </body>
+</html>
